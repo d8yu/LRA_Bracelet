@@ -1,0 +1,17 @@
+This document gives a brief summary and overview of the hardware for the BEAR bracelet. 
+
+At the heart of the bracelet is an Arduino MCU. 
+
+From this MCU, we can control our linear resonance actuators (LRAs) by using the library provided in the src
+
+It is only possible to control a singular LRA from the Arduino due to the DRV2605L motor drivers having the same hardcoded i2c address. 
+
+To overcome this issue, we must use an i2c multiplexer to allow the MCU to interact with multiple devices withe same i2c address. 
+
+
+To connect the LRAs to the Arduino, wire the positive and negative leads (usually marked by red and black) to their respective leads on the DRV2605L motor driver board. 
+
+Next, instead of connecting the SDA and SCL lines from the motor driver boards to the Arduino's SDA and SCL pins-connect the Arduino's pins to the SDA and SCL pins on the PCA9548A i2c multiplexer board. 
+
+You can find the Arduino's i2c lines by consulting the respective board's datasheet. 
+

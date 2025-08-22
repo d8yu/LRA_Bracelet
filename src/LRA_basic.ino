@@ -1,19 +1,11 @@
 
-//PatternAgents DRV2605 library : https://github.com/PatternAgents/Haptic_DRV2605
-
-
-
 #include "Haptic_DRV2605.h"
 Haptic_DRV2605 haptic;             // Basic I2C instance - only SDA/SCL pins used
 int           waveform = 0;        // current waveform
 int           waveforms_max = 0;   // max waveforms available (we'll ask...)
 int           select_mode = 0; 
 
-
-
-
-////Additions by Dominick/////
-
+//Custom definitions for PCA9548A I2C Data Bus Multiplexer  
 #define PCAADDR 0x70      //PCA9548A I2C Data bus multiplexer default address 
 
 //Prototypes 

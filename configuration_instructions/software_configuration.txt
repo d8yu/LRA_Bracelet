@@ -1,0 +1,8 @@
+This document provides an overview for configuring the software for the BEAR bracelet
+
+Once your hardware is configured, you can start configuring your hardware. 
+
+IMPORTANT: In the code, you'll notice the PCAselect() function. In order to actually select the appropriate line on the PCA9548A, pay attention to which number SDx and SCx lines you've connected to your DRV2605L drivers. 
+	ex. If you've connected one of your DRV2605L drivers to SC6 and SD6, make sure one of the calls of the PCAselect() function is called as PCAselect(6);
+
+After this, you should be good to simply upload the code and see a successful result. 
