@@ -5,6 +5,10 @@ As part of the BEAR lab at UC Davis, I've designed a prototype for a bracelet th
 
 In this repo, you will find the associated code and 3D print files.
 
+<h2>Preview</h2>
+<img width="777" height="458" alt="Preview" src="https://github.com/user-attachments/assets/470221e3-5e19-42dd-b81c-d12e81b21f17" />
+3D Model for Bracelet
+
 <h2>Installation and Configuration</h2>
 
 To install and configure the bracelet, download all src files and place them in an accesible folder. 
